@@ -1,13 +1,16 @@
+import { capitalizadoPipe } from './pipes/capitalizado.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import localeEs from '@angular/common/locales/es';
-import { capitalizadoPipe } from 'e2e/src/pipes/capitalizado.pipe';
+
 
 // Configuracion para colocar las fechas en español
 import {LOCALE_ID} from '@angular/core' // colocar en provider
 import { registerLocaleData } from '@angular/common';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 registerLocaleData(localeEs);
 
@@ -15,7 +18,9 @@ registerLocaleData(localeEs);
 @NgModule({
   declarations: [
     AppComponent,
-    capitalizadoPipe
+    capitalizadoPipe,
+    DomseguroPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule

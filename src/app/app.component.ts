@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipes';
+  activar: boolean;
 
   nombre = "Armando";
   nombre2= "rodney armando tapia chávez";
@@ -29,5 +30,7 @@ export class AppComponent {
   });
 
   fecha = new Date();
+  // video = 'https://www.youtube.com/embed/bTpVmamEwQo';
+  contrasenia = "Armando"
 
 }
